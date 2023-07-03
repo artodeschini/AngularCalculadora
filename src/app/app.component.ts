@@ -8,10 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Calculadora';
 
-  resultado: number = 0;
+  resultadoPai: number;
 
   processarResultado(result: number): void {
-    this.resultado = result;
+    this.resultadoPai = result;
   }
 
 }

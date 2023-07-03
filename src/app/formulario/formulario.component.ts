@@ -7,8 +7,13 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class FormularioComponent {
 
-  operandoA: number = 0;
-  operandoB: number = 0;
+  /* 
+   * para nao obrigatoriamente comocar valor ao iniciar um atributo
+   * colocar a propriendade em tsconfig.json
+   * "strictPropertyInitialization": false,
+   */
+  operandoA: number;// = 0;
+  operandoB: number;// = 0;
 
   // vai encaminhar o envento ao componente pai
   @Output() resultadoSoma = new EventEmitter<number>();
