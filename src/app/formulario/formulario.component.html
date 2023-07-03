@@ -1,0 +1,20 @@
+<form>
+    <div class="form-group">
+        <label>Operador A</label>
+        <input type="number"
+        class="form-control" 
+        placeholder="Informe um valor"
+        [(ngModel)]="operandoA" 
+        name="operandoA"/>
+    </div>
+    <div class="form-group">
+        <label>Operador B</label>
+        <input type="number"
+        class="form-control" 
+        placeholder="Informe um valor"
+        [(ngModel)]="operandoB" 
+        name="operandoB"/>
+    </div>
+    <button type="submit" (click)="somar()"
+    class="btn btn-primary">Somar</button>
+</form>
